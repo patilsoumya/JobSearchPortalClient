@@ -9,18 +9,27 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
-  
-   <servlet>
-    	<display-name>ValidateLogon</display-name>
-    	<servlet-name>ValidateLogon</servlet-name>
-    	<servlet-class>
+  <servlet>
+    <display-name>ValidateLogon</display-name>
+    <servlet-name>ValidateLogon</servlet-name>
+    <servlet-class>
     	com.jobSearch.servlets.ValidateLogon</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ValidateLogon</servlet-name>
+    <url-pattern>/ValidateLogon</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    	<display-name>CreateUser</display-name>
+    	<servlet-name>CreateUser</servlet-name>
+    	<servlet-class>
+    	com.jobSearch.servlets.CreateUser</servlet-class>
     </servlet>
     
     <servlet-mapping>
-    	<servlet-name>ValidateLogon</servlet-name>
-    	<url-pattern>/ValidateLogon</url-pattern>
+    	<servlet-name>CreateUser</servlet-name>
+    	<url-pattern>/CreateUser</url-pattern>
     </servlet-mapping>
-  
 </web-app>
